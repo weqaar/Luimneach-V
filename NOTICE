@@ -1,3 +1,32 @@
-Luimneach-V (Luimneach RISC-V Core)
-Copyright 2026 Weqaar Janjua
-Developed at the University of Limerick as part of a Doctorate in Engineering programme.
+Luimneach-V — Luimneach RISC-V Core
+Copyright (c) 2026 Weqaar Janjua
+
+Luimneach (/ˈlɪmnəx/) is the Irish-language name of the city of Limerick.
+
+This work is developed at the University of Limerick, Ireland, as part of a
+Professional Doctorate in Engineering (DEng) programme under the supervision
+of Dr. Eoin O'Connell and the co-supervision of Dr. Mihai Penica.
+
+Luimneach-V is open-source academic research, released under permissive
+licences (see LICENSE for the Apache-2.0 terms covering hardware RTL and
+software; documentation and the accompanying textbook are covered by
+CC-BY-4.0). It is not a product of any commercial organisation.
+
+Any product or publication, in source or binary form, that incorporates
+this work must reproduce this NOTICE in its entirety, including the
+project name, author attribution, and University of Limerick credit, in
+accordance with section 4 of the Apache License, Version 2.0.
+
+If you use Luimneach-V in academic work, please cite:
+
+> Janjua, W. (forthcoming). Luimneach-V: An eBPF-Tuned, In-Order RV64
+Soft Core for Hardware-Accelerated eBPF Execution. Doctorate in
+Engineering, University of Limerick.
+
+The accompanying in-progress textbook (Designing Luimneach-V, CC-BY-4.0)
+and all teaching labs may be redistributed, adapted, and incorporated
+into educational courseware (including commercial courseware), provided
+attribution to the author and the University of Limerick is preserved.
+
+Repository: https://github.com/weqaar/KESTREL-V.git
+Contact:    janjua.weqaar@ul.ie
