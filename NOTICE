@@ -1,4 +1,4 @@
-Luimneach-V — Luimneach RISC-V Core
+Luimneach-V - Luimneach RISC-V Core
 Copyright (c) 2026 Weqaar Janjua
 
 Luimneach (/ˈlɪmnəx/) is the Irish-language name of the city of Limerick.
@@ -19,14 +19,13 @@ accordance with section 4 of the Apache License, Version 2.0.
 
 If you use Luimneach-V in academic work, please cite:
 
-> Janjua, W. (forthcoming). Luimneach-V: An eBPF-Tuned, In-Order RV64
-Soft Core for Hardware-Accelerated eBPF Execution. Doctorate in
-Engineering, University of Limerick.
+> Janjua, W. (forthcoming). Luimneach-V, A Small Deterministic RV64IMC
+Soft Core. Department of Electronic and Computer Engineering, University of Limerick.
 
 The accompanying in-progress textbook (Designing Luimneach-V, CC-BY-4.0)
 and all teaching labs may be redistributed, adapted, and incorporated
 into educational courseware (including commercial courseware), provided
 attribution to the author and the University of Limerick is preserved.
 
-Repository: https://github.com/weqaar/KESTREL-V.git
+Repository: https://github.com/weqaar/Luimneach-V.git
 Contact:    janjua.weqaar@ul.ie
