@@ -41,15 +41,11 @@ The intended OS-bring-up target is **Zephyr RTOS**, with a board-support package
 
 ## How it will be released
 
-LV is open-source academic research. The hardware RTL, software, examples, and CI scripts are released under the Apache License 2.0; the design documentation, RFCs, and the accompanying textbook and labs are released under the Creative Commons Attribution 4.0 International License (CC-BY-4.0). Both licences are permissive: derivatives, including commercial derivatives, are allowed; attribution to the author and the University of Limerick must be preserved per the project's `NOTICE` file.
+LV is open-source academic research. The hardware RTL, software, examples, and CI scripts are released under the Apache License 2.0; the design documentation and RFCs are released under the Creative Commons Attribution 4.0 International License (CC-BY-4.0). Both licences are permissive: derivatives, including commercial derivatives, are allowed; attribution to the author and the University of Limerick must be preserved per the project's `NOTICE` file.
 
 Contributions are accepted under the Developer Certificate of Origin (DCO); contributors add a `Signed-off-by:` trailer to each commit.
 
-## Goals beyond the core itself
-
-Two goals sit alongside the RTL:
-
-**A teaching artefact.** The design of LV is documented as a textbook (working title *Designing Luimneach-V*) with twelve practical labs that take a student from a 2-input multiplexer to a working RV64IMC CPU on real FPGA hardware, booting Zephyr RTOS. The doctoral MVP covers chapters 1-5 and labs 1-6; the rest is post-doctoral work. The book and labs are intended to be adoptable as part of a final-year undergraduate or first-year master's course.
+## Beyond the core itself
 
 **A doctoral publication.** The microarchitecture of LV is the subject of a forthcoming paper, working title *"A Small Deterministic RV64IMC Soft Core, Design, Verification, and FPGA Implementation"* (Janjua, in preparation). Target venues are CARRV (the RISC-V workshop at ISCA), FCCM, or DATE. The paper's headline contribution is the design and verification of a bounded-timing 64-bit soft core and its FPGA implementation, covering an unpipelined, in-order, cache-free RV64IMC datapath with documented instruction-class timing from RTL through compliance to a working bitstream.
 
@@ -59,7 +55,6 @@ Two goals sit alongside the RTL:
 - **Implementation.** Not started in this repository. Previous prototype RTL exists in the candidate's private working tree, predating the doctoral programme; it is firewalled out of the doctoral submission and the RTL in this repository will be authored from first principles under supervision, commit by commit.
 - **Verification.** Not started. Harness design committed to in this document.
 - **Hardware bring-up.** Not started. Target board confirmed (Icicle Kit, MPFS250T-FCVG484EES).
-- **Book and labs.** Chapter 1 drafted; labs 1-6 to be authored over Y3.
 - **Paper.** *A Small Deterministic RV64IMC Soft Core, Design, Verification, and FPGA Implementation* (Janjua, in preparation); target venues are CARRV, FCCM, or DATE.
 
-This document is the project's narrative origin record. The technical specifications follow in `docs/architecture/`; the roadmap and milestones in `plans/ROADMAP.md`; the textbook in `docs/book/`. Each is rooted in the reasoning above.
+This document is the project's narrative origin record. The technical specifications follow in `docs/architecture/`; the roadmap and milestones in `plans/ROADMAP.md`. Each is rooted in the reasoning above.

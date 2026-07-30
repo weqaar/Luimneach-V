@@ -64,7 +64,6 @@ The hypothesis is evaluated through three independent measurements, FPGA resourc
 - Open-source release of the full artefact set under Apache-2.0 (code) and CC-BY-4.0 (documentation).
 - A peer-reviewed publication.
 - A doctoral thesis chapter.
-- A teaching textbook with twelve practical labs (chapters 1-5 and labs 1-6 are the doctoral MVP; chapters 6-12 and labs 7-12 are post-doctoral).
 
 ### 4.2 Out of scope (deferred to post-doctoral work)
 
@@ -168,7 +167,7 @@ For functional simulation outside the FPGA flow, a **Renode** platform definitio
 | FPGA synthesis | Microchip Libero SoC | Bitstream for the PolarFire SoC FPGA Icicle Kit |
 | Compilers | `riscv64-unknown-elf-gcc` and `clang -target riscv64` | Cross-toolchain for slot firmware and bare-metal examples |
 | OS | Zephyr RTOS | OS bring-up target |
-| Documentation | Pandoc + xelatex | Markdown to PDF for ISA spec, RFCs, book chapters |
+| Documentation | Pandoc + xelatex | Markdown to PDF for the ISA spec and RFCs |
 
 All tools are open-source or available free for non-commercial / educational use.
 
@@ -201,7 +200,7 @@ A companion paper specifying the reserved custom-instruction slots is planned as
 Luimneach-V is released under a two-licence model:
 
 - **Apache-2.0** for hardware (RTL, constraints, bitstreams), software (BSP, Zephyr port, examples, CI), and Renode model code.
-- **CC-BY-4.0** for prose content (RFCs, design documentation, figures, textbook chapters, lab content).
+- **CC-BY-4.0** for prose content (RFCs, design documentation, figures).
 
 SPDX identifiers are present in every source file. Contributions are accepted under the Developer Certificate of Origin (DCO); contributors must add a `Signed-off-by:` line to each commit.
 

@@ -11,8 +11,8 @@ of Dr. Eoin O'Connell and the co-supervision of Dr. Mihai Penica.
 
 Luimneach-V is open-source academic research, released under permissive
 licences (see LICENSE for the Apache-2.0 terms covering hardware RTL and
-software; documentation and the accompanying textbook are covered by
-CC-BY-4.0). It is not a product of any commercial organisation.
+software; documentation is covered by CC-BY-4.0). It is not a product of any
+commercial organisation.
 
 ## Licensing and Attribution
 
@@ -36,7 +36,7 @@ Three design goals, taken together not separately:
 
 1. **64-bit, modern toolchain fit.** RV64IMC matches the register width and ABI of mainstream RISC-V toolchains and RTOS distributions, so standard 64-bit artefacts run on the core without translation.
 2. **Deterministic, analysable timing.** The pipeline is strictly in-order, with no branch prediction, no reorder buffer, and no speculative load path. Caches are absent; memory is tightly coupled (TCM-style). Each instruction class has a documented cycle bound, which makes worst-case execution time tractable to analyse.
-3. **Open, vendor-independent, teachable.** The RTL targets an open-source release and vendor-independent FPGA flows. The teaching plan links the core design to a textbook and twelve practical labs suitable for undergraduate or master's-level study.
+3. **Open and vendor-independent.** The RTL targets an open-source release and vendor-independent FPGA flows, so the core can be built, inspected, and modified without a proprietary toolchain licence.
 
 The core also reserves two encodings in the `custom-0` opcode space for future application-specific acceleration; their semantics are deliberately left unspecified here and are the subject of a forthcoming companion paper.
 
@@ -66,26 +66,29 @@ The MVP scope is the smallest version of the core that supports the research hyp
 ## Proposed Repository layout
 
 ```
-luimneach-rv/
+Luimneach-V/
 ├── README.md                  this file
 ├── LICENSE                    Apache-2.0 (code, RTL, software)
-├── LICENSE-DOCS               CC-BY-4.0 (documentation, textbook, labs)
+├── LICENSE-DOCS               CC-BY-4.0 (documentation)
 ├── NOTICE                     Apache-2.0 attribution notice
 ├── docs/
-│   ├── book/                  the textbook (Designing Luimneach-V)
 │   ├── architecture/          ISA + microarchitecture specifications
+│   ├── rfc/                   design proposals and decisions
 │   ├── data-sheet/            timing, resource utilisation, pinouts
 │   ├── publications/          publication manuscripts and review copies
 │   └── HLD/                   high-level design document
 ├── rtl/                       synthesisable RTL (Verilog / SystemVerilog)
 ├── verification/              unit, ISA-compliance, reference-iss, formal
-├── labs/                      graded teaching labs (lab-01 to lab-12)
 ├── fpga/polarfire-icicle/     Libero project, constraints, bitstreams
 ├── software/                  toolchain, BSP, Zephyr port, examples
 ├── renode/                    Renode platform definition
 ├── ci/                        continuous integration scripts
-└── plans/                     ROADMAP, PEDAGOGY-NOTES, PUBLICATION-PLAN
+└── plans/                     ROADMAP, PUBLICATION-PLAN
 ```
+
+Only `README.md`, the licence files, `NOTICE`, `docs/architecture/`,
+`docs/rfc/`, `docs/origins.md`, `rtl/`, `software/`, and `verification/` exist
+so far. The remaining entries are proposed structure, not existing artefacts.
 
 ## Where to start
 
@@ -93,6 +96,7 @@ luimneach-rv/
 |---|---|
 | Understanding why the core exists | [`docs/origins.md`](docs/origins.md) |
 | Reading the design proposal | [`docs/rfc/0001-luimneach-v-design-proposal.md`](docs/rfc/0001-luimneach-v-design-proposal.md) |
+| Looking for the ISA contract | [`docs/architecture/isa-spec.md`](docs/architecture/isa-spec.md) |
 
 ## Author and supervision
 
